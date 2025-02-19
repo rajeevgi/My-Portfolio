@@ -1,22 +1,35 @@
+.footer {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+
 .footer-title {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #000000;
-  }
-  
-  .footer p {
-    color: #000000;
-  }
-  
-  .footer a:hover {
-    color: #ffcc00;
-  }
-  
-  .footer .fa-instagram,
-  .footer .fa-facebook,
-  .footer .fa-linkedin,
-  .footer .fa-square-github,
-  .footer .fa-square-whatsapp {
-    font-size: 1.5em;
-    transition: color 0.3s ease;
-  }
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.footer p {
+  color: #ffffff;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer a {
+  color: #ffffff;
+}
+
+.footer a:hover {
+  color: burlywood;
+}
+
+.footer .fa-instagram,
+.footer .fa-facebook,
+.footer .fa-linkedin,
+.footer .fa-square-github,
+.footer .fa-square-whatsapp {
+  font-size: 1.5em;
+  transition: color 0.3s ease;
+}

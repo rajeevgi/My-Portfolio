@@ -1,1 +1,83 @@
-<p>contact works!</p>
+<div class="container w-75 mt-5" id="contact">
+    <div class="col-12 mb-5 position-relative">
+      <div class="row divider">
+        <h3 class="text-center mt-5">Contact Form</h3>
+        <div class="line"></div>
+        <div class="svg-icon"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+
+    <div class="row d-flex contact-info mb-5">
+      <div class="col-md-6 col-lg-3 d-flex">
+        <div class="align-self-stretch box p-4 text-center">
+          <div class="d-flex align-items-center justify-content-center">
+            <span class="contact-icon"><i class="fa-solid fa-map-location-dot"></i></span>
+          </div>
+          <h3 class="mb-4">Address</h3>
+          <p>Roadpali,Navi-Mumbai,Maharashtra.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 d-flex">
+        <div class="align-self-stretch box p-4 text-center">
+          <div class="d-flex align-items-center justify-content-center">
+            <span class="contact-icon"><i class="fa-solid fa-phone"></i></span>
+          </div>
+          <h3 class="mb-4">Contact number</h3>
+          <p>+91-7208918300</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 d-flex">
+        <div class="align-self-stretch box p-4 text-center">
+          <div class="d-flex align-items-center justify-content-center">
+            <span class="contact-icon"><i class="fa-regular fa-paper-plane"></i></span>
+          </div>
+          <h3 class="mb-4">Email</h3>
+          <p>rajivg216&#64;gmail.com</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 d-flex">
+        <div class="align-self-stretch box p-4 text-center">
+          <div class="d-flex align-items-center justify-content-center">
+            <span class="contact-icon"><i class="fa-brands fa-github"></i></span>
+          </div>
+          <h3 class="mb-4">Github</h3>
+          <p>https://github.com/rajeevgi</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row no-gutters img-bg">
+      <div class="col-md-6 d-flex justify-content-center align-items-center mb-3 mb-md-0">
+        <img src="../../../assets/images/my-image.jpg" alt="LinkedIn Picture" style="height: 350px;">
+      </div>
+      <div class="col-md-6 d-flex justify-content-center align-items-center mt-3 form-container">
+        <form class="row g-3 w-100" id="contact-form" action="https://api.web3forms.com/submit" method="post">
+          <input type="hidden" name="access_key" value="5786b036-4bd8-4d1b-ae9f-d6e1777f7fd1">
+          <div class="col-md-6">
+            <label for="fname" class="form-label">First Name:</label>
+            <input type="text" class="form-control" id="fname" name="fname" required>
+          </div>
+          <div class="col-md-6">
+            <label for="lname" class="form-label">Last Name:</label>
+            <input type="text" class="form-control" id="lname" name="lname" required>
+          </div>
+          <div class="col-12">
+            <label for="email" class="form-label">Email Address:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="col-12">
+            <label for="message" class="form-label">Message:</label>
+            <textarea name="message" id="message" class="form-control" rows="5" cols="5" required></textarea>
+          </div>
+          <div class="col-12 mb-3">
+            <button type="submit" class="btn btn-warning">Send Message</button>
+          </div>
+        </form>
+      </div>
+      <div id="msg" class="col-12 mt-3"></div>
+    </div>
+  </div>
