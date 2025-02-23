@@ -1,2 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import "@fortawesome/fontawesome-free/css/all.css";
+
+.parent {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #fff;
+    padding: 20px 15px;
+}

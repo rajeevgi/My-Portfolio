@@ -1,0 +1,28 @@
+.card {
+    border-radius: 8px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.card:hover {
+    background-color: #ffbd39;
+    color: #000000;
+    transform: translateY(-5px);
+}
+
+.icon-style {
+    font-size: 2rem;
+    color: #ffbd39;
+    transition: color 0.3s;
+}
+
+.card:hover .icon-style {
+    color: #fff;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    margin-bottom: 0;
+}
