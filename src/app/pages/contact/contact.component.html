@@ -83,3 +83,31 @@
     </div>
   </div>
 </div>
+
+<script>
+  document.getElementById('contact-form').addEventListener('submit', async function (event) {
+    event.preventDefault(); // Prevent default form submission
+
+    const form = event.target;
+    const formData = new FormData(form);
+    const formMessage = document.getElementById('msg');
+
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: formData,
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        formMessage.innerHTML = `<div class="alert alert-success">${result.message}</div>`;
+        form.reset(); // Reset the form
+      } else {
+        formMessage.innerHTML = `<div class="alert alert-danger">There was an error submitting the form: ${result.message}</div>`;
+      }
+    } catch (error) {
+      formMessage.innerHTML = `<div class="alert alert-danger">There was an error submitting the form: ${error.message}</div>`;
+    }
+  });
+</script>
